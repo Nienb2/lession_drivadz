@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>driVadz</title>
+    <link rel="icon" href="./assets/img/iconbag.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./assets/jquery/jquery_function.js"></script>
+  </head>
+
+  <body>
+    <div class="main">
+      <!--Header-->
+      <header class="header">
+        <div class="header__navbar">
+          <div class="header__navbar-left">
+            <div class="navbar__logo">
+              <a href="#" class="navbar__logo-link">
+                <img
+                  src="./assets/img/logo.png"
+                  alt="logo"
+                  class="navbar__logo-img"
+                />
+                <span class="navbar__logo-phone">1800 6825</span>
+              </a>
+            </div>
+
+            <ul class="header__navbar-list">
+              <li class="header__navbar-item">
+                <a href="#" class="header__navbar-item-link">CHIẾN DỊCH</a>
+              </li>
+              <li class="header__navbar-item">
+                <a href="#" class="header__navbar-item-link"
+                  >QUẢNG CÁO CHIA SẺ</a
+                >
+              </li>
+              <li class="header__navbar-item">
+                <a href="#" class="header__navbar-item-link">TỔ CHƯC</a>
+              </li>
+              <li class="header__navbar-item">
+                <a href="#" class="header__navbar-item-link">CHỦ XE</a>
+              </li>
+              <li class="header__navbar-item">
+                <a href="#" class="header__navbar-item-link">GIỚI THIỆU</a>
+              </li>
+              <li class="header__navbar-item">
+                <a href="#" class="header__navbar-item-link">TIN TỨC</a>
+              </li>
+              <li class="header__navbar-item">
+                <a href="#" class="header__navbar-item-link">THƯ VIỆN</a>
+              </li>
+              <li class="header__navbar-item">
+                <i class="header__navbar-item-icon fas fa-bars"></i>
+              </li>
+            </ul>
+          </div>
+
+          <div class="header__navbar-right">
+            <ul class="navbar__right-list">
+              <span class="navbar__right-item">
+                <i class="fas fa-user-plus"></i>
+              </span>
+              <span class="navbar__right-item">
+                <i class="fas fa-lock"></i>
+              </span>
+              <span class="navbar__right-item">
+                <i class="fas fa-question-circle"></i>
+              </span>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <div class="slider">
+        <div class="slideshow__container">
+          <div class="group-img">
+            <img src="./assets/img/slider.jfif" class="slide__item" idx="0" />
+            <img
+              src="./assets/img/image.webp"
+              class="slide__item"
+              idx="1"
+              style="display: none"
+            />
+            <img
+              src="./assets/img/image_02.jpg"
+              class="slide__item"
+              idx="2"
+              style="display: none"
+            />
+          </div>
+
+          <button id="next" class="btn-change">next</button>
+          <button id="prev" class="btn-change">prev</button>
+
+          <div class="dots">
+            <span class="dots__item active" idx="0"></span>
+            <span class="dots__item" idx="1"></span>
+            <span class="dots__item" idx="2"></span>
+          </div>
+        </div>
+
+        <div class="wrap__home">
+          <div class="wrap__home-content">
+            <div class="wrap__home-title">
+              <p class="wrap__home-text">
+                Chào mừng bạn đến với driVadz, vui lòng cho chúng tôi biết bạn
+                là TỔ CHỨC hay CHỦ XE?
+              </p>
+            </div>
+            <div class="wrap__home-form">
+              <div class="wrap__home-form-green">
+                <i class="home__form-icon fas fa-user-friends"></i>
+                <p class="home__form-text">Tổ chức</p>
+              </div>
+              <div class="wrap__home-form-orange">
+                <i class="home__form-icon fas fa-street-view"></i>
+                <p class="home__form-text">Chủ xe</p>
+              </div>
+            </div>
+            <div class="wrap__home-login">
+              Bạn đã có tài khoản?
+              <a href="#" class="home__login-link">Đăng nhập</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar">
+        <div class="sidebar__item">
+          <i class="sidebar__item-icon fas fa-car"></i>
+        </div>
+        <div class="sidebar__item">
+          <i class="sidebar__item-icon fas fa-motorcycle"></i>
+        </div>
+      </div>
+
+      <div class="slogan">
+        <h3 class="slogan__title">
+          <span class="slogan__title-bold">driVadz</span>
+          <span class="slogan__title-normal">
+            - Tiên Phong Quảng Cáo Trên Ô Tô - Xe Máy</span
+          >
+        </h3>
+      </div>
+
+      <div class="box__home">
+        <div class="box__home-campaign">
+          <div class="box__home-campaign-left">
+            <ul class="home__campaign-list">
+              <li class="campaign__item bold">Chiến dịch chờ đăng ký</li>
+              <li class="campaign__item">Chiến dịch đang quảng cáo</li>
+              <li class="campaign__item">Chiến dịch đã kết thúc</li>
+            </ul>
+          </div>
+          <div class="box__home-campaign-right">
+            <select name="" class="location">
+              <option value="">Thành phố</option>
+              <option value="">Thành phố Hà Nội</option>
+              <option value="">Tỉnh Hà Giang</option>
+              <option value="">Tỉnh Cao Bằng</option>
+              <option value="">Tỉnh Bắc Kạn</option>
+              <option value="">Tỉnh Tuyên Quang</option>
+              <option value="">Tỉnh Lào Cai</option>
+              <option value="">Tỉnh Điện Biên</option>
+              <option value="">Tỉnh Lai Châu</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="wrap__card">
+          <div class="wrap__card-content">
+            <div class="wrap__card-container">
+              <div class="wrap__card-info">
+                <div class="card__info-img">
+                  <img src="./assets/img/image_car.png" alt="" />
+                </div>
+                <div class="card__info-tag">
+                  <i class="card__info-tag-icon fas fa-car"></i>
+                  <span class="card__info-tag-number">0/5</span>
+                </div>
+                <div class="card__info-body">
+                  <div class="card__info-body-title">
+                    <p>FWD HÀ NỘI</p>
+                  </div>
+                  <div class="card__info-body-content">
+                    <div class="info__body-content-price">
+                      <b>2.000</b>
+                      <span class="info__body-content-month">đ/tháng</span>
+                    </div>
+                    <i class="info__body-content-promtion">Tặng kèm</i>
+                    <div class="info__body-content-time">
+                      <div class="body__content-time-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                      </div>
+                      <div class="body__content-time-text">
+                        <div class="content__time-bold">
+                          <b>Thời gian quảng cáo:</b>
+                        </div>
+                        <span class="content__time-normal"
+                          >02/12/2022 - 16/12/2022</span
+                        >
+                      </div>
+                    </div>
+                    <div class="info__body-content-time">
+                      <div class="body__content-time-icon">
+                        <i class="fas fa-edit"></i>
+                      </div>
+                      <div class="body__content-time-text">
+                        <div class="content__time-bold">
+                          <b>Thời gian đăng kí còn lại:</b>
+                        </div>
+                        <span class="content__time-end"
+                          >Hết thời gian đăng ký</span
+                        >
+                      </div>
+                    </div>
+                    <div class="info__body-content-time">
+                      <div class="body__content-time-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                      </div>
+                      <div class="body__content-time-text">
+                        <div class="content__time-bold">
+                          <b>Thành phố Hồ Chí Minh</b>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Management System-->
+      <div class="management__system">
+        <h1 class="title__slide">
+          <strong>Hệ thống quản lý xe drivadz</strong>
+        </h1>
+        <ul class="system__list">
+          <li class="system__item active">Đo lường trực tuyến 24/24</li>
+          <li class="system__item">Hỗ trợ đa nền tảng</li>
+          <li class="system__item">Hệ thống GPS độc lập</li>
+          <li class="system__item">Theo dõi số lần hiển thị</li>
+          <li class="system__item">Cung cấp đầy đủ dữ liệu</li>
+        </ul>
+        <div class="background__slide">
+          <div class="content__slide">
+            <ul class="content__slide-text">
+              <li class="content__slide-text-bold">
+                <h3>Đo lường trực tuyến 24/24</h3>
+              </li>
+              <li class="content__slide-text-normal">
+                Quý khách hàng sẽ nhận được báo cáo chi tiết và tức thì theo
+                thời gian thực của từng phương tiện tham gia chiến dịch
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="style__box-tradeMark"></div>
+
+      <div class="style__logo-container">
+        <img
+          src="./assets/img/image_1.webp"
+          alt=""
+          class="style__logo-container-img"
+        />
+      </div>
+
+      <div class="style__ads">
+        <div class="style__ads-left">
+          <div class="style__ads-left-img">
+            <img src="./assets/img/image_map.png" alt="Bando" />
+          </div>
+        </div>
+
+        <div class="style__ads-right">
+          <div class="style__ads-right-content">
+            <h1 class="ads__right-title">Chủ xe chờ quảng cáo</h1>
+            <div class="ads__right-body">
+              <div class="ads__right-body-title">
+                <div class="ads__right-body-item">
+                  <h1 class="ads__right-body-text">Tỉnh/TP</h1>
+                </div>
+                <div class="ads__right-body-item">
+                  <h1 class="ads__right-body-text">Tổng số</h1>
+                </div>
+                <div class="ads__right-body-item">
+                  <h1 class="ads__right-body-text">Ô tô</h1>
+                </div>
+                <div class="ads__right-body-item">
+                  <h1 class="ads__right-body-text">Xe máy</h1>
+                </div>
+              </div>
+              <div class="ads__right-wrap-content">
+                <div class="ads__right-wrap-values">
+                  <div class="ads__right-wrap-address">Hà Nội</div>
+                  <div class="ads__right-wrap-total">45</div>
+                  <div class="ads__right-wrap-total-car">
+                    <i class="right__wrap-total-car-icon fas fa-car"></i>
+                    <span class="right__wrap-total-car-text">38</span>
+                  </div>
+                  <div class="ads__right-wrap-total-moto">
+                    <i
+                      class="right__wrap-total-moto-icon fas fa-motorcycle"
+                    ></i>
+                    <span class="right__wrap-total-moto-text">7</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Footer-->
+      <footer class="footer"></footer>
+    </div>
+  </body>
+</html>
